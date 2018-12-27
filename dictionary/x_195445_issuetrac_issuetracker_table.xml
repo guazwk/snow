@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="IssueTracker Table" max_length="40" name="x_195445_issuetrac_issuetracker_table" type="collection">
+        <element label="Page" max_length="100" name="u_page" type="string"/>
+        <element label="Raised for" max_length="32" name="u_raised_for" reference="sys_user" type="reference"/>
+        <element choice="1" label="Tower" max_length="50" name="u_tower" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CS-Finance" sequence="100" value="CS-Finance"/>
+                <element inactive_on_update="false" label="CS-HR" sequence="200" value="CS-HR"/>
+                <element inactive_on_update="false" label="CS-Others" sequence="300" value="CS-Others"/>
+                <element inactive_on_update="false" label="OPS-FA" sequence="400" value="OPS-FA"/>
+                <element inactive_on_update="false" label="OPS-HR" sequence="500" value="OPS-HR"/>
+                <element inactive_on_update="false" label="OPS-IT" sequence="600" value="OPS-IT"/>
+            </choice>
+        </element>
+        <element choice="1" label="Type" max_length="50" name="u_type" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>
